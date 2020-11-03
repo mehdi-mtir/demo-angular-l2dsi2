@@ -1,0 +1,19 @@
+
+<h2>Exercice calculatrice</h2>
+<div class="form-group">
+    <input type="number" name="value1" #val1 class="form-control"/>
+</div>
+<div class="form-group">
+    <input type="number" name="value1" #val2 class="form-control"/>
+</div>
+<div class="row">
+
+    <div class="col-3"><input type="button" value="+" (click)="addition(val1, val2)" class="btn btn-primary"/></div>
+    <div class="col-3"><input type="button" value="-" (click)="soustraction(val1, val2)" class="btn btn-primary"/></div>
+    <div class="col-3"><input type="button" value="*" (click)="multiplication(val1, val2)" class="btn btn-primary"/></div>
+    <div class="col-3"><input type="button" value="/" (click)="division(val1, val2)" class="btn btn-primary"/></div>
+</div>
+<div>
+    <h3>Résultat : {{ result }}</h3>
+</div>
+
